@@ -1,0 +1,9 @@
+.buttonsContainer {
+    display: flex;
+    gap: 10px; /* Расстояние между кнопками */
+    margin-top: 10px; /* Отступ сверху от спана */
+}
+
+.editableSpanContainer {
+    display: inline-block; /* Чтобы спан не занимал всю ширину */
+}

@@ -1,0 +1,18 @@
+.select {
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    width: 150px; /* Фиксированная ширина */
+}
+
+.select:focus {
+    border-color: #007bff; /* Подсветка при фокусе */
+}
+
+.option:hover {
+    background-color: #f0f0f0; /* Наведение на опцию */
+}

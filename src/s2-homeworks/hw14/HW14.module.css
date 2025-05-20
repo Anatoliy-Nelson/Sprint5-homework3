@@ -1,0 +1,25 @@
+.tech {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 8px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    text-align: center;
+}
+
+.loading {
+    color: #888;
+    font-style: italic;
+    font-size: 16px;
+    text-align: right;
+    margin: 20px 0;
+    min-height: 24px;
+}
+
+.container {
+    max-width: 600px;
+    margin-right: auto;
+    padding: 20px;
+}

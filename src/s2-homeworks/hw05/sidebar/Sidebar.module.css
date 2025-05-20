@@ -1,0 +1,67 @@
+.sidebar {
+    width: 250px; /* Фиксированная ширина в закрытом состоянии */
+    height: 100vh; /* Полная высота экрана */
+    background-color: #fff; /* Белый фон */
+    position: fixed; /* Фиксированное положение */
+    top: 0;
+    left: -250px; /* Скрыт за пределами экрана */
+    transition: left 0.3s ease; /* Плавное выдвижение */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Легкая тень */
+    z-index: 1000; /* Поверх контента */
+}
+
+.sidebar.open {
+    left: 0; /* Появляется на экране */
+}
+
+.sidebar.open ~ .background {
+    opacity: 1; /* Появляется при открытии сайдбара */
+    pointer-events: auto; /* Реагирует на клики */
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный */
+    opacity: 0; /* Скрыт по умолчанию */
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Не реагирует на клики, когда скрыт */
+}
+
+.nav {
+    padding: 20px;
+}
+
+.nav a {
+    display: block; /* Каждая ссылка на новой строке */
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #333; /* Темно-серый цвет текста */
+    text-decoration: none; /* Без подчеркивания */
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav a:hover {
+    background-color: #f0f0f0; /* Светло-серый фон */
+    color: #007bff; /* Синий цвет текста */
+}
+
+.nav a.active {
+    background-color: #007bff; /* Синий фон */
+    color: #fff; /* Белый текст */
+    font-weight: bold;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close img {
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,31 @@
+.spanBlock {
+    display: flex;
+    align-items: center; /* Выравнивание иконки и спана */
+    gap: 5px; /* Расстояние между иконкой и текстом */
+}
+
+.span {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer; /* Указывает, что спан кликабелен */
+    padding: 5px;
+}
+
+.input {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    width: 150px; /* Фиксированная ширина инпута */
+}
+
+.pen {
+    width: 16px;
+    height: 16px;
+    opacity: 0.7; /* Лёгкая прозрачность иконки */
+}
+
+.pen:hover {
+    opacity: 1; /* Полная видимость при наведении */
+}

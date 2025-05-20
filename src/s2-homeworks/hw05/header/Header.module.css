@@ -1,0 +1,31 @@
+.burgerMenuIcon {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: none; /* Без фона */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Иконка слева, заголовок по центру или справа */
+    padding: 15px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 900; /* Ниже сайдбара, но выше контента */
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+    font-weight: 600;
+}
